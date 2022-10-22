@@ -6,13 +6,8 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 export default defineConfig({
   server: { port: 8080 },
   build: {
-    outDir: 'docs',
-    rollupOptions: {
-      input: {
-        main: resolve(__dirname, 'src/index.html')
-      }
-    }
+    outDir: '../docs',
   },
-  root: 'src',
+  root:'src',
   plugins: [tsconfigPaths(), viteSingleFile()],
 })
