@@ -8,6 +8,7 @@ export default defineConfig({
     outDir: '../docs',
     emptyOutDir: true
   },
+  publicDir: '../public',
   root: 'src',
   plugins: [tsconfigPaths(), viteSingleFile()],
 })
