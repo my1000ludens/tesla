@@ -1,5 +1,8 @@
-const Icon = document.createElement('a')
-Icon.className = 'icon-instagram'
-Icon.href = 'https://www.instagram.com/my1000ludens_official'
-Icon.target = '_blank'
+import { LightLeft, LightRight } from "./Light"
+
+const Icon = document.createElement('div') as HTMLDivElement
+Icon.className = 'image-tesla' as string
 document.body.appendChild(Icon)
+
+Icon.appendChild(LightLeft)
+Icon.appendChild(LightRight)

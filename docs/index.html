@@ -6,11 +6,11 @@
     <title>My 1000 Ludens</title>
     
     <script type="module" crossorigin>
-(function(){const r=document.createElement("link").relList;if(r&&r.supports&&r.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))i(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const n of t.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&i(n)}).observe(document,{childList:!0,subtree:!0});function s(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerpolicy&&(t.referrerPolicy=e.referrerpolicy),e.crossorigin==="use-credentials"?t.credentials="include":e.crossorigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function i(e){if(e.ep)return;e.ep=!0;const t=s(e);fetch(e.href,t)}})();const o=document.createElement("a");o.className="icon-instagram";o.href="https://www.instagram.com/my1000ludens_official";o.target="_blank";document.body.appendChild(o);
+(function(){const r=document.createElement("link").relList;if(r&&r.supports&&r.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))i(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const n of t.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&i(n)}).observe(document,{childList:!0,subtree:!0});function s(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerpolicy&&(t.referrerPolicy=e.referrerpolicy),e.crossorigin==="use-credentials"?t.credentials="include":e.crossorigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function i(e){if(e.ep)return;e.ep=!0;const t=s(e);fetch(e.href,t)}})();const l=document.createElement("div");l.className="light light-left";const c=document.createElement("div");c.className="light light-right";const o=document.createElement("div");o.className="image-tesla";document.body.appendChild(o);o.appendChild(l);o.appendChild(c);
 
 </script>
     <style>
-body{box-sizing:border-box}.icon-instagram{position:fixed;left:calc(50% - 12px);bottom:calc(50% - 12px);width:24px;height:24px;background-image:url(instagram.png);background-repeat:round}
+body{box-sizing:border-box;width:100%;height:100%;background-color:#000}.image-tesla{--width: min(70vw, 70vh);position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:var(--width);height:var(--width);background-size:contain;background-repeat:no-repeat;background-position:center;background-image:url(tesla.png);background-color:#000}.light{--width-light: var(--width);--light-offest: -28%;position:absolute;bottom:-7%;width:calc(var(--width-light) * 2);height:var(--width-light);background:rgb(226,39,39);background:radial-gradient(ellipse,rgba(226,39,39,.7) 0%,rgba(252,70,70,0) 10%)}.light-left{left:var(--light-offest)}.light-right{right:var(--light-offest)}
 
 </style>
   </head>
@@ -24,6 +24,7 @@ body{box-sizing:border-box}.icon-instagram{position:fixed;left:calc(50% - 12px);
       gtag('config', 'G-QY8Q10SGTD');
     </script>
     <div id="app"></div>
+    <script src="lib/smoke.js"></script>
     
   </body>
 </html>

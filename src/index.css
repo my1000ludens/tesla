@@ -1,13 +1,44 @@
 body {
   box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-color: black;
 }
 
-.icon-instagram {
-  position: fixed;
-  left: calc(50% - 12px);
-  bottom: calc(50% - 12px);
-  width: 24px;
-  height: 24px;
-  background-image: url('instagram.png');
-  background-repeat: round;
+.image-tesla {
+  --width: min(70vw, 70vh);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: var(--width);
+  height: var(--width);
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  background-image: url('tesla.png');
+  background-color: black;
+}
+
+.light {
+  --width-light: var(--width);
+  --light-offest: -28%;
+  position: absolute;
+  bottom: -7%;
+  /* transform: translate(-50%, -50%); */
+  width: calc(var(--width-light) * 2);
+  height: var(--width-light);
+  background: rgb(226,39,39);
+  background: radial-gradient(ellipse, rgba(226,39,39,0.7) 0%, rgba(252,70,70,0) 10%);
+}
+
+.light-left{
+  left: var(--light-offest);
+}
+
+.light-right{
+  right: var(--light-offest);
+
 }
